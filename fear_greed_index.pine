@@ -1,12 +1,14 @@
 //@version=5
 indicator("恐惧贪婪指数 (每日更新)", overlay=false)
 
-// 更新时间: 2025-10-01 02:03
+// 更新时间: 2025-10-02 01:51
 
 var float[] values = array.new_float()
 var int[] dates = array.new_int()
 
 if barstate.isfirst
+    array.push(dates, timestamp(2025, 10, 2))
+    array.push(values, 64)
     array.push(dates, timestamp(2025, 10, 1))
     array.push(values, 49)
     array.push(dates, timestamp(2025, 9, 30))
@@ -185,8 +187,6 @@ if barstate.isfirst
     array.push(values, 66)
     array.push(dates, timestamp(2025, 7, 5))
     array.push(values, 67)
-    array.push(dates, timestamp(2025, 7, 4))
-    array.push(values, 73)
 
 getValue() =>
     result = 50.0
@@ -230,4 +230,4 @@ if barstate.islast
     table.cell(infoTable, 0, 2, "30日均线", text_color=color.purple)
     table.cell(infoTable, 1, 2, str.tostring(ma30, "#"), text_color=color.purple)
     table.cell(infoTable, 0, 3, "更新日期", text_color=color.gray)
-    table.cell(infoTable, 1, 3, "2025-10-01", text_color=color.gray)
+    table.cell(infoTable, 1, 3, "2025-10-02", text_color=color.gray)
