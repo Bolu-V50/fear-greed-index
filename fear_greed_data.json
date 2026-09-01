@@ -1,9 +1,14 @@
 [
   {
+    "value": "69",
+    "value_classification": "Greed",
+    "timestamp": "1788220800",
+    "time_until_update": "69367"
+  },
+  {
     "value": "62",
     "value_classification": "Greed",
-    "timestamp": "1788134400",
-    "time_until_update": "67996"
+    "timestamp": "1788134400"
   },
   {
     "value": "69",
@@ -444,10 +449,5 @@
     "value": "12",
     "value_classification": "Extreme Fear",
     "timestamp": "1780531200"
-  },
-  {
-    "value": "11",
-    "value_classification": "Extreme Fear",
-    "timestamp": "1780444800"
   }
 ]
